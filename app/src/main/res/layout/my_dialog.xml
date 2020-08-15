@@ -9,12 +9,13 @@
         android:id="@+id/et_dialog_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter anything"/>
+        android:hint="Enter anything" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:paddingStart="100dp"
         android:orientation="horizontal">
 
         <Button
