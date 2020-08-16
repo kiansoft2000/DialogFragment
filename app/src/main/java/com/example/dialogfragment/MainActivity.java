@@ -28,24 +28,16 @@ public class MainActivity extends AppCompatActivity implements MyDialog.MyDialog
     }
 
     @Override
-<<<<<<< HEAD
+
     public void onOkButtonClicked(final String data) {
         final TextView textView = findViewById(R.id.tv_main);
-=======
-    public void onOkButtonClicked(String data) {
-        TextView textView=findViewById(R.id.tv_main_showText);
->>>>>>> master
         textView.setText(data);
 
     }
 
     @Override
     public void onCancelButtonClicked() {
-<<<<<<< HEAD
         Toast.makeText(this,"Cancel Button Clicked!",Toast.LENGTH_SHORT).show();
-=======
-        Toast.makeText(MainActivity.this,"Message was Canceled!",Toast.LENGTH_SHORT).show();
 
->>>>>>> master
     }
 }
