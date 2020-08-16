@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,19 @@ import androidx.fragment.app.DialogFragment;
 
 public class MyDialog extends DialogFragment {
     private MyDialogeventListener eventListener;
+<<<<<<< HEAD
+=======
+    private final static String TAG = "OnOKClickListener";
+>>>>>>> master
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
+<<<<<<< HEAD
         eventListener= (MyDialogeventListener) context;
+=======
+        eventListener = (MyDialogeventListener) context;
+>>>>>>> master
     }
 
     @NonNull
@@ -37,6 +46,10 @@ public class MyDialog extends DialogFragment {
             @Override
             public void onClick(View v) {
                 if (editText.length() > 0) {
+<<<<<<< HEAD
+=======
+                    Log.i(TAG, "onClick: OK Button Clicked!");
+>>>>>>> master
                     eventListener.onOkButtonClicked(editText.getText().toString());
                     //View view1 = LayoutInflater.from(getContext()).inflate(R.layout.activity_main, null, false);
                     //TextView textView = view1.findViewById(R.id.tv_main);
